@@ -1,0 +1,68 @@
+openapi: 3.1.0
+info:
+  title: GitKraken API
+  version: '2026-09-22'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-09-22: 2 operation(s) read from 1 public documentation page(s) (each operation
+    names its page in x-source). This is not the provider''s published contract; GitKraken has published no machine-readable contract that the
+    pipeline could find. Engine: local.'
+  x-evidence-tiers:
+    code-example: 2
+    documentation: 0
+    pages-with-code: 1
+    pages-read: 1
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-09-22'
+  x-generator: generate-contract-from-docs.py
+  x-engine: local
+  x-sources:
+  - https://help.gitkraken.com/gitkraken-desktop/how-to-install-self-hosted
+servers:
+- url: https://github.com
+paths:
+  /docker/compose/releases/download/1.14.0/docker-compose-:
+    get:
+      operationId: get_docker_compose_releases_download_1_14_0_docker_compose
+      tags:
+      - Docker
+      summary: GET /docker/compose/releases/download/1.14.0/docker-compose-
+      x-source: https://help.gitkraken.com/gitkraken-desktop/how-to-install-self-hosted
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: "curl -L https://github.com/docker/compose/releases/download/1.14.0/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose\
+          \ \n Apply executable permissions: \n sudo chmod +x /usr/local/bin/docker-compose \n Proceed to the installation section. \n How to\
+          \ install on CentOS without internet access \n Download Docker CE and Docker Compose on a different machine. \n Docker CE for CentOS\
+          \ \n Docker "
+  /linux/ubuntu/gpg:
+    get:
+      operationId: get_linux_ubuntu_gpg
+      tags:
+      - Linux
+      summary: GET /linux/ubuntu/gpg
+      x-source: https://help.gitkraken.com/gitkraken-desktop/how-to-install-self-hosted
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: "curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add - \n Verify the key: \n sudo apt-key fingerprint\
+          \ 0EBFCD88 \n Set up the stable repository: \n sudo add-apt-repository \"deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release\
+          \ -cs) stable\" \n Update the apt package index: \n sudo apt-get update \n Install Docker: \n sudo apt-get install docker-ce \n Switch\
+          \ to root use"
+tags:
+- name: Docker
+- name: Linux
+components:
+  securitySchemes:
+    HTTPS_Basic_Authentication:
+      type: http
+      scheme: basic
+      x-source: https://help.gitkraken.com/gitkraken-desktop/authentication/
+security:
+- HTTPS_Basic_Authentication: []

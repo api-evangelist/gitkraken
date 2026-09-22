@@ -1,0 +1,24 @@
+generated: '2026-09-22'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://help.gitkraken.com/gitkraken-desktop/authentication/
+sources:
+- https://help.gitkraken.com/gitkraken-desktop/authentication/
+- https://help.gitkraken.com/gitkraken-desktop/commit-signing-with-gpg/
+- https://help.gitkraken.com/gitkraken-desktop/how-to-install/
+- https://help.gitkraken.com/gitkraken-desktop/serverless/
+description: Authentication methods for GitKraken Desktop when accessing Git hosts without a dedicated integration page.
+schemes:
+- type: http-basic
+  name: HTTPS Basic Authentication
+  evidence: How HTTPS authentication works – This is the default and most common method for interacting with remotes. It requires your Git username
+    and password.
+  location: header
+  header: Authorization
+  how_to_obtain: Enter your Git host username and password (or personal access token) when prompted during clone or push.
+- type: other
+  name: SSH Key Authentication
+  evidence: How SSH authentication works – Before cloning via SSH, you must first set up your SSH keys in GitKraken Desktop.
+  location: ssh
+  how_to_obtain: Generate a new SSH key pair or browse to an existing one in Preferences > SSH, then add the public key to the hosting service.
+docs: https://help.gitkraken.com/gitkraken-desktop/authentication/

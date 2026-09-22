@@ -1,0 +1,24 @@
+generated: '2026-09-22'
+method: derived
+generator: derive-mcp-candidate.py
+source:
+- openapi/_ae-authored/gitkraken-openapi-generated.yml
+status: candidate
+deployment:
+  mode: none
+  auth: unknown
+  verified: probed
+note: No MCP server was found. The pre-flight posted tools/list to /mcp on www.gitkraken.com, api.gitkraken.com, app.gitkraken.com, feedback.gitkraken.com;
+  verdict absent. Candidate tools below are derived from the 2 operation(s) in the provider's own OpenAPI (2 listed); they describe what a server
+  WOULD expose, not one that exists.
+tools:
+- name: get_docker_compose_releases_download_1_14_0_docker_compose
+  operationId: get_docker_compose_releases_download_1_14_0_docker_compose
+  method: GET
+  path: /docker/compose/releases/download/1.14.0/docker-compose-
+  description: GET /docker/compose/releases/download/1.14.0/docker-compose-
+- name: get_linux_ubuntu_gpg
+  operationId: get_linux_ubuntu_gpg
+  method: GET
+  path: /linux/ubuntu/gpg
+  description: GET /linux/ubuntu/gpg

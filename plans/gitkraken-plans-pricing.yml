@@ -1,0 +1,33 @@
+generated: '2026-09-22'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://gitkraken.com/pricing
+sources:
+- https://gitkraken.com/pricing
+name: GitKraken pricing
+audience: business-product
+pricing_basis: per-seat
+plans:
+- name: Community
+  price_text: Free
+  description: Basic GitKraken Desktop, CLI & GitLens for OSS development
+- name: Pro
+  price_text: $ for the first seat, then per seat per month, paid annually*
+  description: Robust productivity & private repo access for solo devs
+  limits:
+  - name: Seats
+    limit_text: Up to 2 seats
+- name: Advanced
+  price_text: $ per seat per month, paid annually*
+  description: More integrations, powerful features & enhanced AI to supercharge devs + teams
+  limits:
+  - name: Seats
+    limit_text: Up to 10 seats
+- name: Business
+  price_text: $ per seat, per month, paid annually*
+  description: Security, compliance & control for companies and engineering leaders
+  limits:
+  - name: Seats
+    limit_text: Up to 100 seats
+docs: https://gitkraken.com/pricing
+note: 1 extracted row(s) were dropped because their quote was not on the page.
