@@ -24,6 +24,12 @@ modified: '2026-09-22'
 tags:
 - Developer Tools
 - Git
+- Artificial Intelligence
+- Collaboration
+- Platform
+tags_raw:
+- Developer Tools
+- Git
 - AI
 - Collaboration
 - Platform
@@ -73,17 +79,26 @@ common:
   url: https://gitkraken.com/blog
 
 apis:
-- aid: gitkraken:gitkraken-api
-  name: GitKraken API
-  description: 'GitKraken API as documented publicly: 2 operations. Contract generated from the documentation by API Evangelist (2026-09-22);
-    not the provider''s own document.'
+- aid: gitkraken:gitkraken-docker-api
+  name: GitKraken Docker API
+  description: The Docker API from GitKraken — 1 operation(s) for docker.
   humanURL: https://help.gitkraken.com/gitkraken-desktop/how-to-install-self-hosted
   baseURL: https://github.com
+  tags:
+  - Docker
   properties:
   - type: OpenAPI
-    url: openapi/_ae-authored/gitkraken-openapi-generated.yml
-    x-provenance: generated
-
+    url: openapi/gitkraken-docker-api-openapi.yml
+- aid: gitkraken:gitkraken-linux-api
+  name: GitKraken Linux API
+  description: The Linux API from GitKraken — 1 operation(s) for linux.
+  humanURL: https://help.gitkraken.com/gitkraken-desktop/how-to-install-self-hosted
+  baseURL: https://github.com
+  tags:
+  - Linux
+  properties:
+  - type: OpenAPI
+    url: openapi/gitkraken-linux-api-openapi.yml
 x-coverage:
   state: unreadable
   reason: js-rendered-docs
