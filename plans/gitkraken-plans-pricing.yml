@@ -31,3 +31,33 @@ plans:
     limit_text: Up to 100 seats
 docs: https://gitkraken.com/pricing
 note: 1 extracted row(s) were dropped because their quote was not on the page.
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models: []
+  units: []
+  plans:
+  - name: Community
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
+  - name: Pro
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
+  - name: Advanced
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
+  - name: Business
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
