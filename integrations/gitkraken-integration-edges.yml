@@ -2,6 +2,8 @@ generated: '2026-10-13'
 method: searched
 checked:
 - https://aws.amazon.com/marketplace/
+- https://marketplace.atlassian.com/
+- https://marketplace.visualstudio.com/vscode
 marketplace_apps: []
 edges:
 - partner_name: AWS Marketplace
@@ -20,3 +22,43 @@ edges:
   seller_name: GitKraken
   detected_by: sweep-cloud-marketplaces.py
   detected: '2026-10-13'
+- partner_name: Atlassian Marketplace
+  partner: atlassian
+  partner_match: aggregator
+  type: marketplace
+  marketplace: atlassian
+  channel: partner-built
+  relationship: platform-app
+  direction: third-party
+  evidence: https://marketplace.atlassian.com/vendors/1210545/gitkraken
+  listing_count: 2
+  apps:
+  - Git Integration for Jira (GitHub, GitLab, & Azure DevOps)
+  - Dev Info for Jira
+  publisher_name: GitKraken
+  badges:
+  - Cloud Fortified
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+- partner_name: Visual Studio Code Marketplace
+  partner: vs-code-marketplace
+  partner_match: aggregator
+  type: marketplace
+  marketplace: vscode
+  channel: partner-built
+  relationship: platform-app
+  direction: third-party
+  evidence: https://marketplace.visualstudio.com/publishers/eamodio
+  listing_count: 2
+  apps:
+  - GitLens — Git supercharged
+  - GitLens (Insiders)
+  publisher_name: GitKraken
+  badges:
+  - Verified publisher
+  - Verified domain
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+source:
+- https://marketplace.atlassian.com/
+- https://marketplace.visualstudio.com/vscode
