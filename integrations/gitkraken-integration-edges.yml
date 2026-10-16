@@ -75,7 +75,7 @@ edges:
     registered_name: com.gitkraken/gk-cli
     register_id: com.gitkraken/gk-cli
     detected_by: sweep-agent-tools.py
-    detected: '2026-10-14'
+    detected: '2026-10-15'
   mcp_registry:
     servers:
     - com.gitkraken/gk-cli
