@@ -5,6 +5,7 @@ checked:
 - https://marketplace.atlassian.com/
 - https://marketplace.visualstudio.com/vscode
 - https://registry.modelcontextprotocol.io/v0/servers
+- eclipse/integrations/eclipse-integration-edges.yml
 marketplace_apps: []
 edges:
 - partner_name: AWS Marketplace
@@ -75,7 +76,7 @@ edges:
     registered_name: com.gitkraken/gk-cli
     register_id: com.gitkraken/gk-cli
     detected_by: sweep-agent-tools.py
-    detected: '2026-10-15'
+    detected: '2026-10-19'
   mcp_registry:
     servers:
     - com.gitkraken/gk-cli
@@ -91,6 +92,25 @@ edges:
   - namespace-domain
   detected_by: sweep-agent-tools.py
   first_seen: '2026-10-14'
+- partner_name: Eclipse Foundation (open-vsx)
+  partner: eclipse
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: open-vsx
+  evidence: https://open-vsx.org/namespace/eamodio
+  mirror_of: eclipse/integrations/eclipse-integration-edges.yml
+  apps:
+  - GitLens — Git supercharged
+  listing_count: 1
+  detected: '2026-10-20'
+  detected_by: mirror-platform-listings.py
+  category: IDE / developer extension marketplace listing
+  badges:
+  - Verified namespace
 source:
 - https://marketplace.atlassian.com/
 - https://marketplace.visualstudio.com/vscode
