@@ -12,7 +12,13 @@ artifacts:
   front-door-ai/2026-09-17.yml:
     method: unknown
     evidence: no authorship recorded
-  kin/checks-2026-09-24T161608.yml:
+  integrations/_index.yml:
+    method: generated
+    evidence: carries an API Evangelist house phrase
+  integrations/gitkraken-integration-edges.yml:
+    method: searched
+    evidence: declared in the artifact
+  kin/checks-2026-10-11T110117.yml:
     method: generated
     evidence: Kin Score snapshot written by score.rb
   kin/score-2026-09-24T064009.yml:
@@ -24,6 +30,21 @@ artifacts:
   kin/score-2026-09-24T161608.yml:
     method: generated
     evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-25T210408.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-25T232841.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-10-03T000835.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-10-03T024842.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-10-11T110117.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
   llms/gitkraken-llms-provenance.yml:
     method: searched
     evidence: 'derive-llms-provenance.py: harvested'
@@ -33,6 +54,12 @@ artifacts:
   mcp/gitkraken-mcp.yml:
     method: derived
     evidence: declared in the artifact
+  openapi/gitkraken-docker-api-openapi.yml:
+    method: unknown
+    evidence: no authorship recorded
+  openapi/gitkraken-linux-api-openapi.yml:
+    method: unknown
+    evidence: no authorship recorded
   plans/gitkraken-plans-pricing.yml:
     method: searched
     evidence: declared in the artifact
